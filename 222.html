@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="222.css">
+    <script src="xxxx.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">  
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    
+   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+      <div class="company">
+        jQuery
+      </div>
+        
+      <div class="menu">
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contact</a></li>   
+          </ul>
+      </div>    
+    </header>
+   
+    
+    <div class="contents1">
+      <div class="moji">
+       <h2 id="ugoku">Introducing  jQuery  world!</h2>
+       <h3 id="ugoku2">Let's get started!</h3> 
+        
+        <div class="btn">
+        <button>Register</button>
+        </div> 
+        </div>    
+    </div>
+    
+    
+    <div class="contents2">
+        <div class="left">
+       <div class="box1">
+           <h3>
+            $('div').hover(</h3>
+           <h3>  function(){</h3>
+               
+           <h3>      },</h3>
+           <h3>      function(){</h3>
+               
+           <h3>      } </h3>
+           <h3>    );
+           </h3>
+        </div>    
+    
+        <div class="box2">
+          <h3>hoverしたとき、</h3>
+            <h3>hover外したとき、</h3>
+            <h3>のイベント!</h3>
+        </div>
+        </div>
+        
+        
+        <div class="right">
+        <div class="box1">
+            <h3>$(function(){</h3>
+              <h3>     </h3>
+               <h3>This is </h3>
+            　　<h3>jQuery space..</h3>　　　
+               <h3>     </h3>
+            <h3>   });</h3>
+        </div>    
+    
+        <div class="box2">
+          <h3>readyイベントの</h3>    
+          <h3>$(document).ready()</h3>
+            <h3>を省略</h3>
+            <h3>!!!!</h3>
+        </div>
+        </div>    
+    </div>
+    
+    
+    <div class="try">
+        <p>Let's try!</p>
+         <p>Hover the "jQuery experience" below.</p> 
+    </div>
+    
+    <div class="contents3">
+        <div class="abc">
+           <p class="abc-hover1">jQuery experience</p>
+            <p class="abc-hidden">The hover() method specifies two functions to run when the mouse pointer hovers over the selected elements</p>
+        </div>
+        
+        <div class="abc" id="haikei">
+           <p class="abc-hover2">jQuery experience</p>
+        </div>
+        
+        <div class="abc" id="haikei2">
+           <p class="abc-hover3">jQuery experience</p>
+        </div>
+    </div>
+    
+    
+    
+    <div class="contents4">
+     <p>These are simple jQuery hover method which shows how it can be used and what it can do on HTML page.</p>
+     <P>jQuery hover effect makes a website more interactive.</P>
+    </div>
+    
+    
+    
+    <footer>
+       <p>Follow us</p>
+        <h4><i class="fab fa-facebook-square"></i><i class="fab fa-twitter-square"></i></h4>
+        
+    </footer>
+    
+    
+    
+    
+    <script>
+        $(function(){
+            $('#ugoku').css('display','none').fadeIn(2000);
+            $('#ugoku2').css('display','none').fadeIn(5000);
+            
+            
+            $('.abc-hover1').hover(
+            function(){
+                $('.abc-hidden').fadeIn(1000);
+            },
+                function(){
+                    $('.abc-hidden').fadeOut(1000);
+                }
+            );
+            
+            
+            $('.abc-hover2').hover(
+            function(){
+                $('#haikei').css('opacity', '0.7');
+            },
+            function(){
+                $('#haikei').css('opacity', '');
+            });
+            
+            
+            $('.abc-hover3').hover(
+            function(){
+                $('#haikei2').css('background-image', 'url(222pic4.jpg)');
+                $('.abc-hover3').css('color', 'white');
+            },
+            function(){
+                $('#haikei2').css('background-image', '');
+                $('.abc-hover3').css('color','');
+            }
+            );
+            
+        });
+        
+        
+        
+    </script>
+    
+</body>
+</html>
